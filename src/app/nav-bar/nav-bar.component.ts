@@ -16,7 +16,7 @@ export class NavBarComponent implements OnInit {
   }
 
   private createButtonList(): void {
-    this.buttonList = ['home', 'form'];
+    this.buttonList = ['home', 'form', 'inf-scroll', 'dynamic'];
   }
 
 }
