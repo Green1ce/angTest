@@ -1,22 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'angTest-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent {
 
-  public buttonList: string[] = [];
-
-  constructor() { }
-
-  ngOnInit(): void {
-    this.createButtonList();
-  }
-
-  private createButtonList(): void {
-    this.buttonList = ['home', 'form', 'inf-scroll', 'dynamic'];
-  }
-
+  public linksList: string[] = [
+    'home',
+    'form',
+    'inf-scroll',
+    'dynamic',
+    'dependency'
+  ];
 }

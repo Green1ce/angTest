@@ -4,9 +4,11 @@
     <mat-select msInfiniteScroll
                 (infiniteScroll)="getNextBatch()"
                 [complete]="offset === data.length">
-      <ngx-mat-select-search placeholderLabel="Search Segments"
+      <mat-option>
+        <ngx-mat-select-search placeholderLabel="Search Segments"
                              noEntriesFoundLabel="No entries found">
-      </ngx-mat-select-search>
+        </ngx-mat-select-search>
+      </mat-option>
       <mat-option *ngFor="let option of options$ | async" [value]="option">{{option}}</mat-option>
     </mat-select>
   </mat-form-field>
