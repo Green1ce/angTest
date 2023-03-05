@@ -27,6 +27,7 @@ import { DependencyInjectionComponent } from './dependency-injection/dependency-
 import { UseClassComponent } from './dependency-injection/use-class/use-class.component';
 import { FakeClassComponent } from './dependency-injection/fake-class/fake-class.component';
 import { BigClassComponent } from './dependency-injection/big-class/big-class.component';
+import { PromisesComponent } from './promises/promises.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { BigClassComponent } from './dependency-injection/big-class/big-class.co
     UseClassComponent,
     FakeClassComponent,
     BigClassComponent,
+    PromisesComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ export class NavBarComponent {
     'form',
     'inf-scroll',
     'dynamic',
-    'dependency'
+    'dependency',
+    'promises',
   ];
 }
