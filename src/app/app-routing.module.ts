@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { FormComponent } from './form/form.component';
-import { InfiniteScrollComponent } from './infinite-scroll/infinite-scroll.component';
-import { DynamicComponentComponent } from './dynamic-component/dynamic-component.component';
-import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
-import { PromisesComponent } from './promises/promises.component';
+import { HomeComponent } from './components/home/home.component';
+import { FormComponent } from './components/form/form.component';
+import { InfiniteScrollComponent } from './components/infinite-scroll/infinite-scroll.component';
+import { DynamicComponentComponent } from './components/dynamic-component/dynamic-component.component';
+import { DependencyInjectionComponent } from './components/dependency-injection/dependency-injection.component';
+import { PromisesComponent } from './components/promises/promises.component';
+import { StrategiesComponent } from './components/strategies/strategies.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'dynamic', component: DynamicComponentComponent },
   { path: 'dependency', component: DependencyInjectionComponent },
   { path: 'promises', component: PromisesComponent },
+  { path: 'strategies', component: StrategiesComponent },
   { path: '**', component: HomeComponent },
 ];
 

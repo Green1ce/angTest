@@ -1,0 +1,18 @@
+:host {
+  width: 95%;
+  flex: 1 0 auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  border: 1px solid;
+  margin: 5px;
+}

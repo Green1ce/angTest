@@ -1,6 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { SOME_STR, SOME_TRUE, USE_FACTORY } from '../shared/constants/CONST';
-import { ReducedBigClassComponent } from '../shared/interfaces/big-class.component';
+import { SOME_STR, SOME_TRUE, USE_FACTORY } from '../../shared/CONSTS';
 import { BigClassComponent } from './big-class/big-class.component';
 import { FakeClassComponent } from './fake-class/fake-class.component';
 import { UseClassComponent } from './use-class/use-class.component';

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RoutingModule } from './app-routing.module';
 
 //shared
-import { SOME_STR, SOME_TRUE, USE_FACTORY } from './shared/constants/CONST';
+import { SOME_STR, SOME_TRUE, USE_FACTORY } from './shared/CONSTS';
 
 //modules
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -17,17 +17,19 @@ import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 
 //components
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { InfiniteScrollComponent } from './infinite-scroll/infinite-scroll.component';
-import { FormComponent } from './form/form.component';
-import { DynamicComponentComponent } from './dynamic-component/dynamic-component.component';
-import { AddedComponentComponent } from './dynamic-component/component/added-component.component';
-import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
-import { UseClassComponent } from './dependency-injection/use-class/use-class.component';
-import { FakeClassComponent } from './dependency-injection/fake-class/fake-class.component';
-import { BigClassComponent } from './dependency-injection/big-class/big-class.component';
-import { PromisesComponent } from './promises/promises.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { InfiniteScrollComponent } from './components/infinite-scroll/infinite-scroll.component';
+import { FormComponent } from './components/form/form.component';
+import { DynamicComponentComponent } from './components/dynamic-component/dynamic-component.component';
+import { AddedComponentComponent } from './components/dynamic-component/component/added-component.component';
+import { DependencyInjectionComponent } from './components/dependency-injection/dependency-injection.component';
+import { UseClassComponent } from './components/dependency-injection/use-class/use-class.component';
+import { FakeClassComponent } from './components/dependency-injection/fake-class/fake-class.component';
+import { BigClassComponent } from './components/dependency-injection/big-class/big-class.component';
+import { PromisesComponent } from './components/promises/promises.component';
+import { StrategiesComponent } from './components/strategies/strategies.component';
+import { ChildComponent } from './components/strategies/child/child.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { PromisesComponent } from './promises/promises.component';
     FakeClassComponent,
     BigClassComponent,
     PromisesComponent,
+    StrategiesComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
